@@ -58,51 +58,10 @@ countrySelect.addEventListener("change", (event) => {
 });
 
 
+
+
+
 // Validation
-// form.addEventListener('submit',(e)=>{
-//   e.preventDefault();
-
-//   checkInputs();
-// });
-
-// const checkInputs = () =>{
-//   // Get values from the inputs
-//   const usernameValue = userName.value.trim();
-//   const emailValue = emailSelect.value.trim();
-//   const contectValue = contactNoInput.value.trim();
-//   const countryValue = countrySelect.value.trim();
-//   const stateValue = stateSelect.value.trim();
-// }
-
-// if(!usernameValue){
-//    //Show error    
-//     //Add error class
-//     setErrorFor(userName, 'Username cannot be blank');
-//   }
-
-
-// const setErrorFor = (input, message) => {
-//   const formControl = input.parentElement; //this is the .form-control
-//   const small = formControl.querySelector('small');
-  
-//   //add error message inside small
-//   small.innerText = message;
-  
-//   //add error class
-//   formControl.className = 'form-group error';
-// } 
-
-// const setSuccessFor = (input) => {
-//   const formControl = input.parentElement; //this is the .form-control
-  
-//   //add success class
-//   formControl.className = 'form-control success';
-// }
-
-
-
-
-
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the form from being submitted
 
@@ -160,16 +119,6 @@ function validateForm() {
     return false;
   }
 
-
-  // if (name === "") {
-  //   alert("Please enter a name");
-  //   return false;
-  // }
-
-  // if (email === "") {
-  //   alert("Please enter an email address");
-  //   return false;
-  // }
 
   return true;
 }
